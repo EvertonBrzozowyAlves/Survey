@@ -25,6 +25,8 @@ git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green
 
 
 conventionalcommits.org //algumas convenções de commit
+
+git commit --amend --no-edit   //faz um commit mescaldo com o anterior, usando a mesma mensagem 
 -----------------------------------------------------
 NPM
 -----------------------------------------------------
