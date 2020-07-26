@@ -35,3 +35,10 @@ npm i -D git-commit-msg-linter      //lib que garante os commits seguindo o conv
 npm i -D typescript @types/node     //typescript e type definitions
 npm i -D husky                      //lib para adicionar tarefas antes ou depois de commits, push, etc
 npm i -D lint-staged                 //lib para rodar o eslint somente nos arquivos com status staged do git
+
+*Se após rodar a tarefa configurada no lintstagedrc.json os arquivos não foram adicionados ao staged automaticamente,
+adicione a config abaixo após o trecho "eslint 'src/**' --fix":
+', "git add"'
+
+npm i -D jest @types/jest ts-jest   //jest para testes e os seus type definitions 
+    jest --init                     //configurar o jest
