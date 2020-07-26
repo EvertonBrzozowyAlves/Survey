@@ -23,7 +23,10 @@ git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green
     c = !git add --all && git commit -m // para usar: 'git c "mensagem"'
     l = !git log 
 
+
+conventionalcommits.org //algumas convenções de commit
 -----------------------------------------------------
 NPM
 -----------------------------------------------------
 npm init -m     //inicia o npm com as configs default
+npm i -D git-commit-msg-linter  //lib que garante os commits seguindo o conventional commits
