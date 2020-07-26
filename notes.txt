@@ -1,10 +1,10 @@
 -----------------------------------------------------
 GIT
 -----------------------------------------------------
-git config          //configurações: system (para todos os usuários e projetos), global (seu usuário), local (somente projeto atual)
-git config --list   //mostra as configurações do git na máquina
-git config --global core.editor code // altera o editor das configurações para vscode
-git config --global --edit  //editar as configurações
+git config                              //configurações: system (para todos os usuários e projetos), global (seu usuário), local (somente projeto atual)
+git config --list                       //mostra as configurações do git na máquina
+git config --global core.editor code    // altera o editor das configurações para vscode
+git config --global --edit              //editar as configurações
 
 git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr' //formatando a saída do git log
 %C(cor)
@@ -28,5 +28,6 @@ conventionalcommits.org //algumas convenções de commit
 -----------------------------------------------------
 NPM
 -----------------------------------------------------
-npm init -m     //inicia o npm com as configs default
-npm i -D git-commit-msg-linter  //lib que garante os commits seguindo o conventional commits
+npm init -m                         //inicia o npm com as configs default
+npm i -D git-commit-msg-linter      //lib que garante os commits seguindo o conventional commits
+npm i -D typescript @types/node     //typescript e type definitions
