@@ -1,0 +1,29 @@
+-----------------------------------------------------
+GIT
+-----------------------------------------------------
+git config          //configurações: system (para todos os usuários e projetos), global (seu usuário), local (somente projeto atual)
+git config --list   //mostra as configurações do git na máquina
+git config --global core.editor code // altera o editor das configurações para vscode
+git config --global --edit  //editar as configurações
+
+git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr' //formatando a saída do git log
+%C(cor)
+%h: hash do commit reduzido
+%d: branch
+%s: mensagem
+%cn: quem fez o commit
+%cr: data commit
+
+//nas configs do git, adicionar :
+[core]
+	editor = code --wait //para que o git tenha tempo de carregar os dados no arquivo antes de abrir
+
+[alias]
+    s = !git status -s //associa o comando git status -s (status resumido) ao alias s
+    c = !git add --all && git commit -m // para usar: 'git c "mensagem"'
+    l = !git log 
+
+-----------------------------------------------------
+NPM
+-----------------------------------------------------
+npm init -m     //inicia o npm com as configs default
